@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Collections;
+
 
 public class Bataille {
 
@@ -21,12 +21,8 @@ public class Bataille {
         
         
         while(win == false) {
-            
-            System.out.println("Voici la carte du joueur 1 : " + paquetDeJeu.get(0).getValeur()+ " de "+ 
-            paquetDeJeu.get(0).getCouleur()+ "\n"+ "Voici la carte du joueur 2 : " +paquetDeJeu2.get(0).getValeur() + " de " + 
-            paquetDeJeu2.get(0).getCouleur());
-                
-            System.out.println(carte.compare(paquetDeJeu.get(0), paquetDeJeu2.get(0)) + " la manche n°  " + manche);
+           
+            //System.out.println(carte.compare(paquetDeJeu.get(0), paquetDeJeu2.get(0)) + " la manche nÂ°  " + manche);
 
             manche ++ ;
             
@@ -55,10 +51,10 @@ public class Bataille {
             }
             if(paquetDeJeu.size() == 1) {
                 win = true;
-                System.out.println("Joueur 2 a gagné");
+                System.out.println("Joueur 2 a gagnÃ© au bout de : " + manche + " manches" );
             }else if (paquetDeJeu2.size() == 1 ) {
                 win = true;
-                System.out.println("Joueur 1 a gagné");
+                System.out.println("Joueur 1 a gagnÃ© au bout de : " + manche + " manches ");
                 
             }
 
