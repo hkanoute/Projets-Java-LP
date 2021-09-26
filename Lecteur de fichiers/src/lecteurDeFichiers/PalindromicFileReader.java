@@ -31,15 +31,12 @@ private String path;
 					
 				}
 				System.out.println(inversedCharacter);
-				return parse(inversedCharacter);
+				return null
 			} else System.out.println("An error occured ! verify that your file exist or if the path isn't wrong");
 			return null;	
 	}
 
-	private ArrayList<String> parse(String inversedCharacter) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 
 }
